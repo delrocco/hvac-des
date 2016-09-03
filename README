@@ -1,0 +1,28 @@
+----------------------------------------------------------------------
+HVAC-DES
+----------------------------------------------------------------------
+
+A diagnostic expert system for residential HVAC systems, circa 4/2011.
+
+----------------------------------------------------------------------
+NOTES
+----------------------------------------------------------------------
+
+This program is intended to help people with diagnostics of residential
+HVAC systems, to give them a better understanding of the problem before
+calling a technician.
+
+This program was written to be executed with CLIPS, a LISP engine for
+building expert systems. http://clipsrules.sourceforge.net
+
+Execute the project CLIPS script with CLIPSDOS (or comparable binary)
+Version 6.3. To execute, simply (load) the file, then (reset) and (run).
+
+----------------------------------------------------------------------Intended Target Audience:----------------------------------------------------------------------
+The intended user of this system is anyone seeking help with basicdiagnostics of residential HVAC systems.  Experience doing so is notintended to be required of the user of this system.  That having beensaid though, it will be helpful if the user of this system has basicmechanical knowledge or familiarity with multi-meters, pressure gages,screwdrivers, etc.  The reason for this is because this system may askyou for the status or measurement of various components located insidean air-handler, requiring the use of at least a screwdriver to gainaccess to them as well as a multi-meter or gages to measure them.
+----------------------------------------------------------------------What This Program Does:----------------------------------------------------------------------
+This expert system attempts to diagnose common malfunctions that occurwith residential HVAC systems.  Though there are many brands & modelsof systems on the market today, the core operational concepts anddiagnostic routines are roughly the same.  It will ask you variousquestions, some more specific than others, and eventually give you afinal answer as to the most likely diagnosis and recommended fix foryour system.
+----------------------------------------------------------------------What This Program Does NOT Do:----------------------------------------------------------------------
+This expert system will not delve into the detailed specifics of howto repair an isolated component,such as a compressor, once a problemis diagnosed.  If the expert system thinks that your compressor is badit will report so but will not necessarily tell you how to repair itspecifically.  There are several reasons for this: (1) The goal here is to diagnose the problem. (2) Repair can often be as detailed a topic as diagnostics. (3) In general, most HVAC components should be replaced outright. (4) Sub-components vary enough to warrant detailed repair FAQs.
+----------------------------------------------------------------------Discrepancies w/ Your HVAC System:----------------------------------------------------------------------
+Note there may be discrepancies between what is stated in this programand your own HVAC system, simply because there are many differentmodels and configurations on the market today, and from many differentvendors.  So it is definitely possible that the configuration of aparticular sub-system unique to your HVAC unit has not been accountedfor and is therefore not mentioned specifically.To address this, the expert has made a valiant effort to try andtackle diagnostics generically across all residential HVAC systems.Keep this in mind and accomodate as necessary.For Example:If the expert system asks you to check the power circuits associatedwith say 5 heating elements, but you find that your system has as manyas 8 or as few as 3 heating element circuits, then adjust accordingly.You should expect to check all of them, as a problem with any of themwill affect the heating efficiency of your system.
